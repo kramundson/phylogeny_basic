@@ -1,0 +1,12 @@
+channels:
+  - conda-forge
+  - bioconda
+  - r
+  - defaults
+dependencies:
+  - graphviz=2.38.0
+  - muscle=3.8.31
+  - python=3.5.1
+  - pyyaml=3.11
+  - snakemake=5.1.4
+  - raxml=8.2.10
