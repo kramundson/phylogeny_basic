@@ -27,5 +27,5 @@ rule raxml:
         suffix="tree.nwk"
     conda: "envs/pliny"
     log: "log/raxml.log"
-    shell: "raxmlHPC -s {input} -n {params.suffix} {params.line} -T {threads}"
+    shell: "raxmlHPC-PTHREADS -s {input} -n {params.suffix} {params.line} -T {threads}"
     
