@@ -10,7 +10,7 @@ rule muscle:
     output: "seqs.afa"
     threads: 12
     params: "-maxiters 1 -diags1"
-    conda: "envs/tree"
+    conda: "envs/pliny"
     log: "log/muscle.log"
     shell: """
         cat {input} > tmp_all.fasta ;
@@ -25,7 +25,7 @@ rule raxml:
     params: 
         line="-m PROTGAMMAWAG -p 155 -b 155 -# 10",
         suffix="tree.nwk"
-    conda: "envs/tree"
+    conda: "envs/pliny"
     log: "log/raxml.log"
     shell: "raxmlHPC -s {input} -n {params.suffix} {params.line} -T {threads}"
     
