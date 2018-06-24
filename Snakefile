@@ -23,7 +23,7 @@ rule raxml:
     output: "RAxML_info.tree.nwk", "RAxML_bootstrap.tree.nwk"
     threads: 12
     params: 
-        line="-m PROTGAMMAWAG -p 155 -b 155 -# 10",
+        line="-m PROTGAMMAWAG -p 155 -b 155 -# 12",
         suffix="tree.nwk"
     conda: "envs/pliny"
     log: "log/raxml.log"
