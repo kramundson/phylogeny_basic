@@ -1,5 +1,4 @@
-Quick Snakemake pipeline for constructing phylogeny.
-Consider this a work in progress: MPI parallelism not implemented yet.
+Quick Snakemake pipeline for multiple alignment with tree.
 
 I. Installation
 
@@ -22,8 +21,8 @@ source  $HOME/.bashrc
 2. Clone this repo
 
 ```
-git clone github.com/kramundson/pam_UGT.git
-cd pam_UGT
+git clone github.com/kramundson/phylogeny_basic.git
+cd phylogeny_basic
 ```
 
 3. Create environment
@@ -47,10 +46,10 @@ To test which commands will be run:
 snakemake -np
 ```
 
-To run in basic (non-cluster) mode using 12 CPUs:
+To run in on a single node using 12 CPUs:
 
 ```
 snakemake --cores 12
 ```
 
-Output will be in current working directory.
+Output multiple alignment, tree info and tree will be in current working directory.
