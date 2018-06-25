@@ -21,7 +21,7 @@ source  $HOME/.bashrc
 2. Clone this repo
 
 ```
-git clone github.com/kramundson/phylogeny_basic.git
+git clone https://github.com/kramundson/phylogeny_basic
 cd phylogeny_basic
 ```
 
