@@ -46,7 +46,7 @@ To test which commands will be run:
 snakemake -np
 ```
 
-To run in on a single node using 12 CPUs:
+To run on a single node using 12 CPUs:
 
 ```
 snakemake --cores 12
